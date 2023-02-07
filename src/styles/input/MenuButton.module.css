@@ -1,0 +1,19 @@
+.button {
+  @apply
+    /* Spacing */
+    w-7 md:w-8
+    h-[30px] md:h-8
+    [&>span]:w-full
+    [&>span]:h-0.75 [&>span]:md:h-1
+    /* Layout */
+    lg:hidden
+    /* Flexbox & Grid */
+    flex
+    flex-col
+    justify-around
+    items-end
+    /* Background */
+    [&>span]:bg-secondary
+    /* Border */
+    [&>span]:rounded;
+}

@@ -1,0 +1,126 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply
+      /* Layout */
+      overflow-x-hidden
+      overscroll-y-none
+      /* Typography */
+      font-neue
+      text-zinc-900
+      antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  *, *::before, *::after {
+    @apply
+      /* Layout */
+      box-border
+      /* Spacing */
+      p-0
+      m-0;
+  }
+
+  *:focus {
+    @apply
+      /* Border */
+      outline-none;
+  }
+
+  a {
+    @apply
+      /* Typography */
+      text-inherit
+      no-underline;
+  }
+
+  p {
+    @apply
+      /* Typography */
+      text-md md:text-base lg:text-lg
+      text-zinc-600;
+  }
+
+  h1, h2, h3 {
+    @apply
+      /* Typography */
+      font-neue-bold;
+  }
+
+  h1 {
+    @apply
+      /* Typography */
+      font-neue-black
+      text-5xl md:text-6xl lg:text-7xl;
+  }
+
+  h2 {
+    @apply
+      /* Typography */
+      text-4xl md:text-4.5xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply
+      /* Typography */
+      text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  /* Century Gothic Fonts */
+
+  @font-face {
+    font-family: Century Gothic;
+    src: url(../../public/fonts/century-gothic/regular.ttf);
+  }
+
+  @font-face {
+    font-family: Century Gothic Bolda;
+    src: url(../../public/fonts/century-gothic/bold.ttf);
+  }
+
+  /* Helvetica Fonts */
+
+  @font-face {
+    font-family: Helvetica Neue Light;
+    src: url(../../public/fonts/helvetica/regular.ttf);
+  }
+
+  @font-face {
+    font-family: Helvetica Neue Thin;
+    src: url(../../public/fonts/helvetica/light.ttf);
+  }
+
+  @font-face {
+    font-family: Helvetica Neue;
+    src: url(../../public/fonts/helvetica/light.ttf);
+  }
+
+  @font-face {
+    font-family: Helvetica Neue Medium;
+    src: url(../../public/fonts/helvetica/medium.ttf);
+  }
+
+  @font-face {
+    font-family: Helvetica Neue Bold;
+    src: url(../../public/fonts/helvetica/bold.ttf);
+  }
+
+  @font-face {
+    font-family: Helvetica Neue Heavy;
+    src: url(../../public/fonts/helvetica/heavy.ttf);
+  }
+
+  @font-face {
+    font-family: Helvetica Neue Black;
+    src: url(../../public/fonts/helvetica/black.ttf);
+  }
+
+  @font-face {
+    font-family: Helvetica Neue BlackCond;
+    src: url(../../public/fonts/helvetica/blackcond.ttf);
+  }
+}

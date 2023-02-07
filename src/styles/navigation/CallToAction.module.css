@@ -1,0 +1,28 @@
+.action {
+  @apply
+    /* Sizing */
+    w-60
+    h-12
+    /* Border */
+    border-[5px]
+    border-secondary
+    /* Border */
+    rounded-full;
+}
+
+.content {
+  @apply
+    /* Sizing */
+    w-full
+    h-full
+    /* Flexbox & Grid */
+    grid
+    place-content-center
+    /* Typography */
+    font-neue-medium
+    text-md md:text-lg
+    tracking-wide
+    text-primary
+    /* Border */
+    rounded-full;
+}

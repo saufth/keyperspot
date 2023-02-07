@@ -1,0 +1,17 @@
+.link {
+  @apply
+    /* Sizing */
+    w-60
+    h-12
+    /* Flexbox & Grid */
+    grid
+    place-content-center
+    /* Typography */
+    font-neue-medium
+    text-lg md:text-base lg:text-lg
+    tracking-wider
+    /* Border */
+    border-[5px]
+    border-zinc-700
+    rounded-3xl;
+}

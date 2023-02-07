@@ -1,0 +1,89 @@
+.navbar {
+  @apply
+    /* Layout */
+    fixed
+    top-0
+    left-0
+    right-0
+    z-70
+    /* Background */
+    bg-white/70
+    /* Filter */
+    backdrop-filter
+    backdrop-blur;
+}
+
+.navbarScrolled {
+  @apply
+    /* Shadow */
+    shadow
+    shadow-zinc-900/10;
+}
+
+.content {
+  @apply
+    /* Sizing */
+    max-w-8xl
+    /* Spacing */
+    px-5%
+    py-4 md:py-5 lg:py-6
+    mx-auto
+    /* Flexbox & Grid */
+    flex
+    justify-between
+    items-center;
+}
+
+.link {
+  @apply
+    /* Layout */
+    hidden lg:block
+    /* Typogrphy */
+    font-neue-medium
+    text-sm
+    hover:text-secondary
+    /* Animation */
+    transition-colors;
+}
+
+.optionMedium {
+  @apply
+    /* Layout */
+    hidden lg:block;
+}
+
+.optionSmall {
+  @apply
+    /* Layout */
+    block lg:hidden;
+}
+
+.logo {
+  @apply
+    /* Sizing */
+    w-auto h-12
+    hidden md:block;
+}
+
+.logomark {
+  @apply
+    /* Sizing */
+    w-auto h-12
+    md:hidden;
+}
+
+.close {
+  @apply
+    /* Sizing */
+    w-7 md:w-8
+    h-[30px] md:h-8
+    /* Flexbox & Grid */
+    grid
+    place-content-center
+    /* Typography */
+    font-neue-medium
+    text-4xl
+    text-secondary
+    /* Interactiviry */
+    cursor-pointer;
+}
