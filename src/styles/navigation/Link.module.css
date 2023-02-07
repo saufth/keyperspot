@@ -8,7 +8,7 @@
     place-content-center
     /* Typography */
     font-neue-medium
-    text-lg md:text-base lg:text-lg
+    text-md lg:text-lg
     tracking-wider
     /* Border */
     border-[5px]
