@@ -46,7 +46,7 @@
     transition-colors;
 }
 
-.optionMedium {
+.action {
   @apply
     /* Layout */
     hidden lg:block;
@@ -61,15 +61,8 @@
 .logo {
   @apply
     /* Sizing */
-    w-auto h-12
-    hidden md:block;
-}
-
-.logomark {
-  @apply
-    /* Sizing */
-    w-auto h-12
-    md:hidden;
+    w-auto
+    h-11 md:h-12;
 }
 
 .close {

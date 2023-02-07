@@ -50,8 +50,8 @@ const HomePage = () => {
         <section className={styles.hero}>
           <div className={styles.heroContent}>
             <header className={styles.heroHeader}>
-              <h1>
-                TU <span className={styles.textHighlighted}>ACTIVO CONSTANTE</span>
+              <h1 className={styles.heroHeading}>
+                The place where <span>Key Performance</span> happens
               </h1>
               <p className={styles.heroDescription}>
                 Potenciamos el factor humano de las empresas con visión,

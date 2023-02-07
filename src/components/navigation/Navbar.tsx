@@ -53,36 +53,26 @@ const Navbar = () => {
     <>
       <header className={navbarStyle}>
         <div className={styles.content}>
-          <div>
-            <NextLink href='/' onClick={closeToggle}>
-              <Image
-                src='/images/logo-vertical.svg'
-                alt='Keyperspot logotype'
-                width={350.5}
-                height={64}
-                priority
-                className={styles.logo}
-              />
-              <Image
-                src='/images/logomark.svg'
-                alt='Keyperspot logotype'
-                width={64}
-                height={64}
-                priority
-                className={styles.logomark}
-              />
-            </NextLink>
-          </div>
+          <NextLink href='/' onClick={closeToggle}>
+            <Image
+              src='/images/logo-vertical.svg'
+              alt='Keyperspot logotype'
+              width={350.5}
+              height={64}
+              priority
+              className={styles.logo}
+            />
+          </NextLink>
 
           {navOptions.map((option, key) => {
             return (
-              <NextLink className={styles.optionMedium} href={option.href} key={key}>
+              <NextLink className={styles.link} href={option.href} key={key}>
                 {option.children}
               </NextLink>
             )
           })}
 
-          <div className={styles.optionMedium}>
+          <div className={styles.action}>
             <CallToAction />
           </div>
 

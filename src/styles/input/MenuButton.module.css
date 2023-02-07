@@ -1,10 +1,10 @@
 .button {
   @apply
     /* Spacing */
-    w-7 md:w-8
-    h-[30px] md:h-8
+    w-8
+    h-[30px]
     [&>span]:w-full
-    [&>span]:h-0.75 [&>span]:md:h-1
+    [&>span]:h-0.75
     /* Layout */
     lg:hidden
     /* Flexbox & Grid */
@@ -13,7 +13,7 @@
     justify-around
     items-end
     /* Background */
-    [&>span]:bg-secondary
+    [&>span]:bg-primary
     /* Border */
     [&>span]:rounded;
 }
