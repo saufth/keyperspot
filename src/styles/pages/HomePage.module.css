@@ -64,6 +64,8 @@
   @apply
     /* Sizing */
     w-full md:w-1/2
+    /* Spacing */
+    mt-8 md:mt-0
     /* Flexbox & Grid */
     grid
     place-content-center;
