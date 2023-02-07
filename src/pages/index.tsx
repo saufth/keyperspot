@@ -51,7 +51,7 @@ const HomePage = () => {
           <div className={styles.heroContent}>
             <header className={styles.heroHeader}>
               <h1 className={styles.heroHeading}>
-                The place where <span>Key Performance</span> happens
+                The <span>Spot</span> where <span>Key Performance</span> takes place
               </h1>
               <p className={styles.heroDescription}>
                 Potenciamos el factor humano de las empresas con visión,
