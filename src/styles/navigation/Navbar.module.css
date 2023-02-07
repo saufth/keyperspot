@@ -74,9 +74,8 @@
     grid
     place-content-center
     /* Typography */
-    font-neue-medium
     text-4xl
-    text-secondary
+    text-primary
     /* Interactiviry */
     cursor-pointer;
 }
