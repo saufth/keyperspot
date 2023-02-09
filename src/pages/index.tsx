@@ -31,7 +31,11 @@ const solutionsConfig = [
     icon: 'charts'
   },
   {
-    text: 'Expedientes de laborales',
+    text: 'Trámite jurídico para contratación y terminaciones laborales',
+    icon: 'list'
+  },
+  {
+    text: 'Expedientes laborales',
     icon: 'folder'
   },
   {
@@ -41,10 +45,6 @@ const solutionsConfig = [
   {
     text: 'Cálculo de finiquitos y liquidaciones',
     icon: 'scale'
-  },
-  {
-    text: 'Trámite jurídico para contratación y terminaciones laborales',
-    icon: 'list'
   },
   {
     text: 'Implementación de KPI+OKR+BSC',
