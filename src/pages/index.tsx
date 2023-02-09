@@ -31,7 +31,7 @@ const solutionsConfig = [
     icon: 'charts'
   },
   {
-    text: 'Trámite jurídico para contratación y terminaciones laborales',
+    text: 'Trámite jurídico para contratación y terminación laboral',
     icon: 'list'
   },
   {
