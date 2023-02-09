@@ -15,6 +15,10 @@ const solutionsConfig = [
     icon: 'dialog'
   },
   {
+    text: 'Branding para trabajadores',
+    icon: 'user'
+  },
+  {
     text: 'Reclutamiento y selección de personal',
     icon: 'choice'
   },
@@ -23,12 +27,12 @@ const solutionsConfig = [
     icon: 'test'
   },
   {
-    text: 'Expedientes de laborales',
-    icon: 'folder'
-  },
-  {
     text: 'Estudios socioeconómicos',
     icon: 'charts'
+  },
+  {
+    text: 'Expedientes de laborales',
+    icon: 'folder'
   },
   {
     text: 'Negociación de liquidaciones',
@@ -39,7 +43,7 @@ const solutionsConfig = [
     icon: 'scale'
   },
   {
-    text: 'Trámite jurídico de terminaciones laborales',
+    text: 'Trámite jurídico para contratación y terminaciones laborales',
     icon: 'list'
   },
   {
@@ -61,10 +65,6 @@ const solutionsConfig = [
   {
     text: 'Implementación de software especializado en RR.HH.',
     icon: 'software'
-  },
-  {
-    text: 'Branding para trabajadores',
-    icon: 'user'
   }
 ]
 
