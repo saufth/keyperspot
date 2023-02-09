@@ -237,7 +237,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <section id='problematic' className={styles.problematic}>
+      {/* <section id='problematic' className={styles.problematic}>
         <h2>
           Problemáticas actuales
         </h2>
@@ -304,7 +304,7 @@ const HomePage = () => {
           <li>Los trabajadores confían mas en sus empresas, en sus empleadores que en el gobierno (estadísticamente), esto pone un gran peso y responsabilidad en el manejo y administración del recurso humano. El responsable del área de RH se vuelve un asesor importante para el CEO de las empresas.</li>
           <li>Desarrollo de lideres, gerentes y directores.</li>
         </ul>
-      </section>
+      </section> */}
     </>
   )
 }
