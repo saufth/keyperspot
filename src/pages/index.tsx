@@ -35,7 +35,7 @@ const solutionsConfig = [
     icon: 'list'
   },
   {
-    text: 'Expedientes laborales',
+    text: 'Generación y resguardo de expedientes laborales',
     icon: 'folder'
   },
   {
