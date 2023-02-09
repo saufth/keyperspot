@@ -4,7 +4,7 @@
     w-full
     h-screen
     /* Spacing */
-    pt-24
+    pt-12 md:pt-24
     /* Layout */
     fixed
     top-0
