@@ -19,16 +19,14 @@ const Showcase = (
     image,
     action,
     link,
-    large,
     reverse
   }: ShowcaseProps
 ) => {
   // Reverse
   const containerStyle = `${styles.container} ${reverse ? styles.containerReverse : ''}`
-  const demoStyle = `${styles.demo} ${reverse ? styles.demoReverse : ''} ${large ? styles.demoLarge : ''}`
+  const demoStyle = `${styles.demo} ${reverse ? styles.demoReverse : ''}`
   const imageContainerStyle = `${styles.imageContainer} ${reverse ? styles.imageContainerReverse : ''}`
   // Image
-  const imageStyle = `${styles.image}`
   const backgroundImageStyle = { backgroundImage: `url(/images/sections/${image}.jpg)` }
 
   return (
@@ -37,12 +35,12 @@ const Showcase = (
       <div>
         <div className={demoStyle}>
           <div className={styles.header}>
-            <h2>
+            <h3>
               {heading}
-            </h2>
+            </h3>
             <div className={styles.descriptions}>
               {descriptions.map((description, key) => (
-                <p key={key}>
+                <p className={styles.description} key={key}>
                   {description}
                 </p>
               ))}
@@ -58,7 +56,7 @@ const Showcase = (
 
       <div>
         <div className={imageContainerStyle}>
-          <div className={imageStyle} style={backgroundImageStyle} />
+          <div className={styles.image} style={backgroundImageStyle} />
         </div>
       </div>
 

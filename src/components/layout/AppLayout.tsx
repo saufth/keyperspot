@@ -4,6 +4,7 @@ import GSearchSchemaScript from '../app/scripts/GSearchSchemaScript'
 import Navbar from '../navigation/Navbar'
 // Types
 import { ParentProps } from '../../types/layout'
+import Footer from '../sections/Footer'
 
 /** The base URL of the application */
 const baseUrl = process.env.HOST
@@ -64,7 +65,10 @@ export default function AppLayout ({ children } : ParentProps) {
         <meta name='twitter:image' content={coverImageUrl} />
       </Head>
       <Navbar />
-      {children}
+      <main>
+        {children}
+      </main>
+      <Footer />
       <GSearchSchemaScript />
     </>
   )

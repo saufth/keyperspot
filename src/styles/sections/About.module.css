@@ -1,33 +1,26 @@
-.header {
+.section {
   @apply
     /* Sizing */
-    max-w-8xl
+    max-w-9xl
     /* Spacing */
+    px-5%
     mx-auto
-    space-y-12 md:space-y-14
+    /* Spacing */
+    pt-24
+    pb-12;
+}
+
+.header {
+  @apply
+    /* Spacing */
+    space-y-8
     /* Typography */
     text-center;
-}
-
-.heading {
-  @apply
-    /* Typography */
-    text-xl md:text-2xl
-    tracking-widest;
-}
-
-.description {
-  @apply
-    /* Typography */
-    font-neue-medium
-    text-3xl md:text-4xl
-    leading-snug sm:leading-snug md:leading-snug
-    tracking-wide md:tracking-widest;
 }
 
 .showcase {
   @apply
     /* Spacing */
-    mt-36 md:mt-56
-    space-y-36 md:space-y-40;
+    mt-24 md:mt-36
+    space-y-12 md:space-y-36;
 }

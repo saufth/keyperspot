@@ -4,6 +4,12 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply
+      /* Interactivity */
+      !scroll-smooth;
+  }
+
   body {
     @apply
       /* Layout */
@@ -41,14 +47,8 @@
   p {
     @apply
       /* Typography */
-      text-md md:text-base lg:text-lg
-      text-zinc-600;
-  }
-
-  h1, h2, h3 {
-    @apply
-      /* Typography */
-      font-neue-bold;
+      font-neue-medium
+      text-lg md:text-xl lg:text-2xl;
   }
 
   h1 {
@@ -61,12 +61,14 @@
   h2 {
     @apply
       /* Typography */
+      font-neue-heavy
       text-4xl md:text-4.5xl lg:text-5xl;
   }
 
   h3 {
     @apply
       /* Typography */
+      font-neue-medium
       text-2xl md:text-3xl lg:text-4xl;
   }
 

@@ -1,30 +1,29 @@
 // Components
+import CallToAction from './CallToAction'
 import Image from 'next/image'
 import NextLink from 'next/link'
 import Menu from './Menu'
 import MenuButton from '../input/MenuButton'
-// React
-import { useState } from 'react'
 // Animation
-import { useCycle, useMotionValueEvent, useScroll } from 'framer-motion'
+import { useCycle } from 'framer-motion'
+// Types
+import { LinkProps } from '../../types/navigation'
 // Styles
 import styles from '../../styles/navigation/Navbar.module.css'
-import { LinkProps } from '../../types/navigation'
-import CallToAction from './CallToAction'
 
 /** The navigation configuration */
 const navOptions: LinkProps[] = [
   {
-    children: 'NOSOTROS',
-    href: '/about'
+    children: 'SOLUCIONES',
+    href: '/#solutions'
   },
   {
-    children: 'SERVICIOS',
-    href: '/#services'
+    children: 'ESTRATEGÍA',
+    href: '/#strategy'
   },
   {
-    children: 'RAZON DE SER',
-    href: '/why'
+    children: 'PROBLEMÁTICA',
+    href: '/#problematic'
   }
 ]
 
@@ -33,8 +32,6 @@ const navOptions: LinkProps[] = [
  * @returns Navbar component
  */
 const Navbar = () => {
-  const [isOnTop, setIsOnTop] = useState(true)
-  const { scrollY } = useScroll()
   // Animation
   const [isOpen, toggle] = useCycle(false, true)
 
@@ -43,15 +40,9 @@ const Navbar = () => {
   /** Close the Menu but not open */
   const closeToggle = () => { isOpen && toggle() }
 
-  const navbarStyle = `${styles.navbar} ${!isOnTop ? styles.navbarScrolled : ''}`
-
-  useMotionValueEvent(scrollY, 'change', (latestScrollY) => {
-    setIsOnTop(latestScrollY < 24)
-  })
-
   return (
     <>
-      <header className={navbarStyle}>
+      <header className={styles.navbar}>
         <div className={styles.content}>
           <NextLink href='/' onClick={closeToggle}>
             <Image

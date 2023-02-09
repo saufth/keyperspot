@@ -7,14 +7,16 @@
     right-0
     z-70
     /* Background */
-    bg-white/70
-    /* Filter */
-    backdrop-filter
-    backdrop-blur;
+    bg-white
+    /* Shadow */
+    shadow
+    shadow-zinc-900/10;
 }
 
 .navbarScrolled {
   @apply
+    /* Background */
+    bg-white
     /* Shadow */
     shadow
     shadow-zinc-900/10;
@@ -23,7 +25,7 @@
 .content {
   @apply
     /* Sizing */
-    max-w-8xl
+    max-w-9xl
     /* Spacing */
     px-5%
     py-4 md:py-5 lg:py-6

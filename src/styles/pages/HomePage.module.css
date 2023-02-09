@@ -1,11 +1,10 @@
 .hero {
   @apply
     /* Sizing */
-    max-w-8xl
+    max-w-9xl
     h-auto md:h-3xl
     /* Spacing */
     md:pl-5%
-    mb-36 md:mb-24
     mx-auto
     /* Flexbox & Grid */
     flex
@@ -16,11 +15,13 @@
 .heroContent {
   @apply
     /* Sizing */
-    w-full md:w-[45%]
+    w-full md:w-9/20
     h-full
     /* Spacing */
     px-5% md:px-0
     mt-36 md:mt-0
+    /* Layout */
+    z-10
     /* Flexbox & Grid */
     flex
     flex-col
@@ -32,6 +33,7 @@
   @apply
     /* Spacing */
     space-y-6
+    /* Typography */
     text-center md:text-left;
 }
 
@@ -61,15 +63,92 @@
 .heroImageWrap {
   @apply
     /* Sizing */
-    w-full md:w-[55%]
+    w-full md:w-11/20
+    mt-12
     /* Flexbox & Grid */
     grid
     place-content-center;
 }
 
-.heroImage {
+.quote {
   @apply
-    /* Layout */
-    overflow-hidden;
+    /* Typography */
+    bg-primary;
 }
 
+.quoteWrap {
+  @apply
+  /* Sizing */
+  max-w-6xl
+  /* Spacing */
+  px-5%
+  py-24 md:py-36
+  mx-auto
+  /* Typography */
+  text-center
+  text-white;
+}
+
+.phrase {
+  @apply
+    /* Typography */
+    font-neue-medium
+    text-2xl md:text-3xl
+    md:tracking-wide
+    leading-normal md:leading-relaxed;
+}
+
+.author {
+  @apply
+    /* Spacing */
+    mt-12
+    mb-2
+    /* Typography */
+    font-neue-bold
+    text-lg md:text-xl;
+}
+
+.legend {
+  @apply
+    /* Typography */
+    text-base md:text-lg;
+}
+
+.quoteAction {
+  @apply
+    /* Flexbox & Grid */
+    mt-12
+    flex justify-center;
+}
+
+.problematic {
+  @apply
+  /* Sizing */
+  max-w-9xl
+  /* Spacing */
+  px-5%
+  pt-24
+  mx-auto
+  space-y-6 md:space-y-8;
+}
+
+.problematicList {
+  @apply
+  /* Spacing */
+  pl-6 md:pl-8
+  space-y-3 md:space-y-6
+  /* Typography */
+  font-neue-medium
+  text-lg md:text-xl
+  list-disc;
+}
+
+.problematicSublist {
+  @apply
+  /* Spacing */
+  pl-3 md:pl-6
+  mt-3 md:mt-8
+  space-y-3 md:space-y-6
+  /* Typography */
+  list-disc;
+}

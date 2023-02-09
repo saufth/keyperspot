@@ -3,6 +3,8 @@
     /* Sizing */
     w-full
     h-screen
+    /* Spacing */
+    pt-24
     /* Layout */
     fixed
     top-0
@@ -12,7 +14,7 @@
     /* Flexbox & Grid */
     grid
     place-content-center
-    gap-y-12 md:gap-y-9
+    gap-y-5 md:gap-y-6
     /* Typography */
     text-sm md:text-base
     text-center
@@ -22,7 +24,7 @@
 .option {
   @apply
     /* Typography */
-    text-5xl md:text-4xl lg:text-5xl
+    text-3xl md:text-4xl
     text-zinc-900;
 }
 

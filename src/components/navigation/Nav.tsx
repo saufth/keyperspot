@@ -36,7 +36,7 @@ const Nav = ({ primary }: NavProps) => {
   const navOptions = primary ? navConfig.slice(0, -1) : navConfig
 
   return (
-    <nav aria-label='Directorio emah' className={styles.nav}>
+    <nav aria-label='Keyperspot directorio' className={styles.nav}>
       {navOptions.map((option, key) => {
         return (
           <NextLink href={option.href} key={key}>

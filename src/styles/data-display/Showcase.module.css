@@ -2,17 +2,15 @@
   @apply
     /* Sizing */
     h-auto md:h-md lg:h-xl
-    max-w-8xl
     [&>div]:w-full [&>div]:md:w-1/2
     [&>div]:h-auto [&>div]:md:h-full
     /* Spacing */
-    px-5%
     mx-auto
-    my-0
     /* Flexbox & Grid */
     flex
     flex-col-reverse md:flex-row
-    md:gap-x-10 gap-y-6 md:gap-y-0;
+    md:gap-x-10
+    gap-y-5 md:gap-y-0;
 }
 
 .containerReverse {
@@ -24,42 +22,34 @@
 .demo {
   @apply
     /* Sizing */
-    w-full lg:w-7/12
+    w-full
     h-full
-    /* Spacing */
-    px-4 md:px-0
-    /* Layout */
-    md:float-right
     /* Flexbox & Grid */
     flex flex-col
     md:justify-center
-    gap-y-8 md:gap-y-12;
-}
-
-.demoLarge {
-  @apply
-    /* Sizing */
-    md:w-5/6 lg:w-3/4;
-}
-
-.demoReverse {
-  @apply
-    /* Layout */
-    md:float-none;
+    gap-y-12
+    text-center md:text-left;
 }
 
 .header {
   @apply
     /* Spacing */
-    space-y-3 md:space-y-6;
+    space-y-5 md:space-y-6;
 }
 
 .descriptions {
   @apply
     /* Spacing */
-    space-y-2 sm:space-y-3
+    space-y-3 sm:space-y-4
     /* Typography */
     font-neue-medium;
+}
+
+.description {
+  @apply
+    /* Typography */
+    font-neue
+    text-base md:text-xl;
 }
 
 .action {
@@ -71,17 +61,11 @@
 .imageContainer {
   @apply
     /* Sizing */
-    w-full md:w-sm lg:w-md
+    w-full
     h-sm md:h-md lg:h-full
     /* Flexbox & Grid */
     flex flex-col
     justify-center;
-}
-
-.imageContainerReverse {
-  @apply
-    /* Layout */
-    md:float-right;
 }
 
 .image {
@@ -89,9 +73,11 @@
     /* Sizing */
     w-full
     h-full
-    /* Border */
-    rounded-11%
     /* Background */
     bg-center
-    bg-cover;
+    bg-cover
+    rounded-[5%]
+    /* Shadow */
+    shadow-lg
+    shadow-zinc-900/20;
 }

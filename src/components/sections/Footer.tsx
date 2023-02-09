@@ -1,9 +1,9 @@
 // Components
 import CallToAction from '../navigation/CallToAction'
+import Image from 'next/image'
 import NextLink from 'next/link'
 // Styles
 import styles from '../../styles/sections/Footer.module.css'
-import SocialNav from '../navigation/SocialNav'
 
 /**
  * The footer section of application
@@ -12,27 +12,34 @@ import SocialNav from '../navigation/SocialNav'
 const Footer = () => {
   return (
     <footer className={styles.section}>
-      {/* <div id='about' className={styles.philosophy}>
-        <div className={styles.philosophyHeader}>
-          <div className={styles.philosophyHeading}>
-            emah
-          </div>
-          <div className={styles.philosophyDescription}>
-            Endless Posibilities
-          </div>
-        </div>
-      </div> */}
       <div className={styles.foot}>
         <div className={styles.footMail}>
-          <NextLink href='mailto:info@emah.mx' target='_blank' rel='noreferrer'>
-            info@emah.mx
+          <NextLink href='mailto:info@keyperspot.com' target='_blank' rel='noreferrer'>
+            info@keyperspot.com
           </NextLink>
         </div>
-        <SocialNav />
         <div className={styles.footAction}>
           <CallToAction />
         </div>
+        <div className={styles.rights}>
+          <NextLink href='/'>
+            <Image
+              src='/images/logo-vertical.svg'
+              alt='Keyperspot logotype'
+              width={175}
+              height={32}
+            />
+          </NextLink>
+          Copyright 2023 Keyperspot. All rights reserved.
+        </div>
       </div>
+      <nav className={styles.nav}>
+        <NextLink href='/'>Inicio</NextLink>
+        <NextLink href='/#solutions'>Soluciones</NextLink>
+        <NextLink href='/#strategy'>Estrategía</NextLink>
+        <NextLink href='/#problematic'>Problemática</NextLink>
+        <NextLink href='/contact'>Contacto</NextLink>
+      </nav>
     </footer>
   )
 }

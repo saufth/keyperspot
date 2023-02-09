@@ -13,30 +13,17 @@ import styles from '../../styles/sections/About.module.css'
  */
 const About = ({ id, heading, description, showcases, action, link }: AboutProps) => {
   return (
-    <section id={id}>
-      {description
-        ? (
-          <header className={styles.header}>
-            {heading
-              ? (
-                <h2 className={styles.heading}>
-                  {heading}
-                </h2>
-                )
-              : null}
-            <h2 className={styles.description}>
-              {description}
-            </h2>
-          </header>
-          )
-        : null}
+    <section id={id} className={styles.section}>
+      <header className={styles.header}>
+        <h2>{heading}</h2>
+        <p>{description}</p>
+      </header>
       <div className={styles.showcase}>
         {showcases.map((about, key) => (
           <Showcase
             heading={about.heading}
             descriptions={about.descriptions}
             image={about.image}
-            large
             action={action}
             link={link}
             reverse={key % 2 !== 0}

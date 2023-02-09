@@ -10,17 +10,13 @@ export interface IconProps {
 }
 
 /** Images used in showcase component */
-export type ShowcaseImage = 'marketing'
-| 'branding'
-| 'development'
-| 'design'
-| 'team'
-| 'innovate'
-| 'oportunity'
-| 'assume'
-| 'strategy'
-| 'prevent'
-| 'progress'
+export type ShowcaseImage = 'about-team'
+| 'about-innovate'
+| 'about-oportunity'
+| 'about-assume'
+| 'about-strategy'
+| 'about-prevent'
+| 'about-progress'
 
 /** Showcase component props */
 export interface ShowcaseProps {
@@ -30,8 +26,6 @@ export interface ShowcaseProps {
   descriptions: string[]
   /** Image to use on the showcase */
   image: ShowcaseImage
-  /** Set the demo width to large */
-  large?: boolean
   /** Set a CallToAction button */
   action?: boolean
   /** Set a Link from the specific route */

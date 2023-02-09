@@ -27,13 +27,13 @@ const SmoothLayout = ({ children }: ParentProps) => {
 
   return (
     <>
-      <motion.div
+      <motion.main
         className={styles.scrollable}
         style={{ y: containerSpring }}
         ref={scrollRef}
       >
         {children}
-      </motion.div>
+      </motion.main>
 
       <div style={{ height }} />
     </>

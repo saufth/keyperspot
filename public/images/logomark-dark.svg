@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="logomark"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="9.9729847"
+     inkscape:cx="31.033839"
+     inkscape:cy="23.012168"
+     inkscape:window-width="1366"
+     inkscape:window-height="707"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <g id="logo">
+    <path
+       d="m 38.403746,28.581326 h 4.86079 v -8.152899 h -9.779249 v 4.77624 c 0,0.918617 -0.744454,1.662891 -1.66111,1.662891 -0.916653,0 -1.659908,-0.744274 -1.659908,-1.662891 v -4.77624 h -1.16454 v 19.61195 h 1.16454 v -4.925731 c 0,-0.917029 0.743255,-1.660887 1.659908,-1.660887 0.916656,0 1.66111,0.743858 1.66111,1.660887 v 4.925731 h 9.779249 v -8.135273 h -4.86079 c -0.917053,0 -1.660309,-0.744274 -1.660309,-1.662096 0,-0.917407 0.743256,-1.661682 1.660309,-1.661682"
+       style="fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.400625"
+       id="base" />
+    <path
+       d="M 32.000012,0.00695124 C 14.326085,0.00695124 8.0088821e-6,14.34528 8.0088821e-6,32.033791 8.0088821e-6,49.104706 13.345358,63.054255 30.163498,64.006954 V 58.921292 20.428465 H 23.814197 V 57.714097 C 12.944097,54.246881 5.0706416,44.061562 5.0706416,32.033791 c 0,-14.884582 12.0570644,-26.9512025 26.9293704,-26.9512025 14.870705,0 26.927769,12.0666205 26.927769,26.9512025 0,13.749975 -10.289032,25.094373 -23.582319,26.742814 v 5.109304 C 51.445578,62.212198 64.000017,48.590492 64.000017,32.033791 64.000017,14.34528 49.672337,0.00695124 32.000012,0.00695124"
+       style="fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.400625"
+       id="center" />
+  </g>
+</svg>

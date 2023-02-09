@@ -9,7 +9,6 @@ import { motion } from 'framer-motion'
 import { MenuProps } from '../../types/navigation'
 // Styles
 import styles from '../../styles/navigation/Menu.module.css'
-import SocialNav from './SocialNav'
 
 /** Background animation variants */
 const backgroundVariants = {
@@ -64,7 +63,7 @@ const Menu = ({ isOpen, action }: MenuProps) => {
       custom={width}
     >
       <motion.div
-        aria-label='Directorio emah'
+        aria-label='Keyperspot directorio'
         className={styles.nav}
         variants={navVariants}
       >
@@ -73,26 +72,23 @@ const Menu = ({ isOpen, action }: MenuProps) => {
         </div>
         <div className={styles.option} onClick={action}>
           <NextLink href='/'>
-            Home
+            Inicio
           </NextLink>
         </div>
         <div className={styles.option} onClick={action}>
-          <NextLink href='/about'>
-            About us
+          <NextLink href='/#solutions'>
+            Soluciones
           </NextLink>
         </div>
         <div className={styles.option} onClick={action}>
-          <NextLink href='/services'>
-            Services
+          <NextLink href='/#strategy'>
+            Estrategía
           </NextLink>
         </div>
         <div className={styles.option} onClick={action}>
-          <NextLink href='/why'>
-            Reason why
+          <NextLink href='/#problematic'>
+            Problemática
           </NextLink>
-        </div>
-        <div className={styles.option} onClick={action}>
-          <SocialNav />
         </div>
         <div className={styles.action} onClick={action}>
           <CallToAction />

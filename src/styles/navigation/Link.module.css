@@ -10,8 +10,9 @@
     font-neue-medium
     text-md lg:text-lg
     tracking-wider
+    text-primary
     /* Border */
     border-[5px]
-    border-zinc-700
+    border-secondary
     rounded-3xl;
 }
