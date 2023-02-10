@@ -23,6 +23,10 @@ const solutionsConfig = [
     icon: 'choice'
   },
   {
+    text: 'Implementación de KPI+OKR+BSC',
+    icon: 'results'
+  },
+  {
     text: 'Pruebas de polígrafo y psicométricas',
     icon: 'test'
   },
@@ -45,10 +49,6 @@ const solutionsConfig = [
   {
     text: 'Cálculo de finiquitos y liquidaciones',
     icon: 'scale'
-  },
-  {
-    text: 'Implementación de KPI+OKR+BSC',
-    icon: 'results'
   },
   {
     text: 'Monitoreo de la salud física y psicológica de los trabajadores',
