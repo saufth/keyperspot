@@ -19,12 +19,12 @@ const solutionsConfig = [
     icon: 'user'
   },
   {
-    text: 'Reclutamiento y selección de personal',
-    icon: 'choice'
-  },
-  {
     text: 'Implementación de KPI+OKR+BSC',
     icon: 'results'
+  },
+  {
+    text: 'Reclutamiento y selección de personal',
+    icon: 'choice'
   },
   {
     text: 'Pruebas de polígrafo y psicométricas',
@@ -68,8 +68,8 @@ const solutionsConfig = [
   }
 ]
 
-/** About page configuration */
-const strategy: AboutProps = {
+/** Strategy section configuration */
+const strategyConfig: AboutProps = {
   id: 'strategy',
   heading: 'La estrategía',
   description: 'El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos. Aquí te presentamos los más importantes para nosotros, mismos que forman parte de nuestro ADN y que son la clave en la generación de soluciones de valor para nuestros clientes.',
@@ -218,7 +218,7 @@ const HomePage = () => {
           </p>
         </div>
       </section>
-      <About {...strategy} />
+      <About {...strategyConfig} />
       <div className={styles.quote}>
         <div className={styles.quoteWrap}>
           <div className={styles.phrase}>

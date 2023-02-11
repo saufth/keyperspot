@@ -70,12 +70,6 @@
     place-content-center;
 }
 
-.quote {
-  @apply
-    /* Typography */
-    bg-primary;
-}
-
 .quoteWrap {
   @apply
   /* Sizing */
@@ -85,8 +79,7 @@
   py-24 md:py-36
   mx-auto
   /* Typography */
-  text-center
-  text-white;
+  text-center;
 }
 
 .phrase {
