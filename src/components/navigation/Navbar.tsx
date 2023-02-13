@@ -34,7 +34,6 @@ const navOptions: LinkProps[] = [
 const Navbar = () => {
   // Animation
   const [isOpen, toggle] = useCycle(false, true)
-
   /** Handle the Menu state */
   const handleToggle = () => { toggle() }
   /** Close the Menu but not open */

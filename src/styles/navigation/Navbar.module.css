@@ -17,9 +17,9 @@
   @apply
     /* Background */
     bg-white
-    /* Shadow */
-    shadow
-    shadow-zinc-900/10;
+    /* Border */
+    border-b
+    border-zinc-300;
 }
 
 .content {
