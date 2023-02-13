@@ -9,7 +9,7 @@
     tracking-wide
     text-white
     /* Background */
-    bg-secondary hover:bg-zinc-900
+    bg-zinc-900 hover:bg-secondary
     /* Border */
     border-[5px]
     rounded-full
@@ -22,7 +22,7 @@
 .actionSecondary {
   @apply
     /* Background */
-    bg-zinc-900 hover:bg-secondary;
+    bg-secondary hover:bg-zinc-900;
 }
 
 .content {

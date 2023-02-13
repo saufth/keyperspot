@@ -29,7 +29,7 @@
     gap-y-12;
 }
 
-.heroHeader {
+.header {
   @apply
     /* Spacing */
     space-y-6

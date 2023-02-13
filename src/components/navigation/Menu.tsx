@@ -91,7 +91,7 @@ const Menu = ({ isOpen, action }: MenuProps) => {
           </NextLink>
         </div>
         <div className={styles.action} onClick={action}>
-          <CallToAction />
+          <CallToAction theme='secondary' />
         </div>
       </motion.div>
 
