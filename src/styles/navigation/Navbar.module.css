@@ -43,7 +43,7 @@
     /* Typogrphy */
     font-neue-medium
     text-sm
-    hover:text-secondary
+    text-zinc-600 hover:text-secondary
     /* Animation */
     transition-colors;
 }
