@@ -103,7 +103,7 @@ const Solutions = () => {
               width={582}
               height={768}
             />
-            <CallToAction theme='secondary' />
+            <CallToAction />
           </div>
         </div>
         <p className={styles.legend}>

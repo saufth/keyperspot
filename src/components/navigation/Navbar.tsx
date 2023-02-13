@@ -64,7 +64,7 @@ const Navbar = () => {
           })}
 
           <div className={styles.action}>
-            <CallToAction />
+            <CallToAction theme='secondary' />
           </div>
 
           {isOpen
