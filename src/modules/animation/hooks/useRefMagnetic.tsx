@@ -17,7 +17,7 @@ const strength = 1.18
 /**
  * Creates a magnetic field animation when the selected layout is hovered
  * @see {@link MagneticProps} for props definition
- * @param {MagneticProps} MagneticProps Magnetic props
+ * @param MagneticProps Magnetic props
  * @returns A magnetic ref for a div
  */
 const useRefMagnetic = (

@@ -8,7 +8,7 @@ import styles from '../../styles/sections/About.module.css'
 /**
  * A section using for show cases about something
  * @see {@link AboutProps} for props specifications
- * @param {AboutProps} AboutProps About section component props
+ * @param AboutProps About section component props
  * @returns About section component
  */
 const About = ({ id, heading, description, showcases, action, link }: AboutProps) => {

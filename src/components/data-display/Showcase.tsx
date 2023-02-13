@@ -9,7 +9,7 @@ import Link from '../navigation/Link'
 /**
  * Using to show a image with a heading and descriptions
  * @see {@link ShowcaseProps} for props specifications
- * @param {ShowcaseProps} ShowcaseProps The component props
+ * @param ShowcaseProps The component props
  * @returns The Showcase component
  */
 const Showcase = (

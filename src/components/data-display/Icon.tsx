@@ -8,7 +8,7 @@ import { IconProps } from '../../types/data-display'
 /**
 * Using to display a simple icon
 * @see {@link IconProps} for props definition
-* @param {IconProps} IconProps The Icon component porps
+* @param IconProps The Icon component porps
 * @returns The Icon component
 */
 const Icon = ({ icon }: IconProps) => {

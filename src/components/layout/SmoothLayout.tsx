@@ -13,7 +13,7 @@ import styles from '../../styles/layout/SmoothLayout.module.css'
 /**
  * A scrolleable container with ease effect
  * @see {@link ParentProps} for props definitions
- * @param {ParentProps} ParentProps The child elements
+ * @param ParentProps The child elements
  * @returns The Home page layout component
  */
 const SmoothLayout = ({ children }: ParentProps) => {

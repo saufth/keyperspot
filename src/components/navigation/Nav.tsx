@@ -29,7 +29,7 @@ const navConfig: LinkProps[] = [
 /**
 * The main navigation of the application
 * @see {@link NavProps} for props definition
-* @param {NavProps} NavProps The nav component props
+* @param NavProps The nav component props
 * @returns The Nav component
 */
 const Nav = ({ primary }: NavProps) => {

@@ -1,10 +1,10 @@
 // Components
-import Head from 'next/head'
+import Footer from '../sections/Footer'
 import GSearchSchemaScript from '../app/scripts/GSearchSchemaScript'
+import Head from 'next/head'
 import Navbar from '../navigation/Navbar'
 // Types
 import { ParentProps } from '../../types/layout'
-import Footer from '../sections/Footer'
 
 /** The base URL of the application */
 const baseUrl = process.env.HOST

@@ -33,3 +33,13 @@ export interface ShowcaseProps {
   /** Invert the order of content */
   reverse?: boolean
 }
+
+/** The quote component props */
+export interface QuoteProps {
+  /** The phrase to display */
+  phrase: string
+  /** The author of the phrase */
+  author: string
+  /** A legend about the author */
+  legend?: string
+}

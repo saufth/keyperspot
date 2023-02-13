@@ -1,6 +1,8 @@
 // Components
 import Icon from '../data-display/Icon'
 import NextLink from 'next/link'
+// Styles
+import styles from '../../styles/navigation/SocialNav.module.css'
 
 /**
  * The main social network navigation of application
@@ -8,7 +10,7 @@ import NextLink from 'next/link'
  */
 const SocialNav = () => {
   return (
-    <div className='flex gap-x-5 md:gap-x-3 justify-center'>
+    <div className={styles.social}>
       <NextLink
         href='https://www.facebook.com/'
         target='_blank'
