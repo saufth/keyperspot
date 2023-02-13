@@ -11,7 +11,7 @@ import { LinkProps } from '../../types/navigation'
 // Styles
 import styles from '../../styles/navigation/Navbar.module.css'
 
-/** The navigation configuration */
+/** Navbar nav configuration */
 const navOptions: LinkProps[] = [
   {
     children: 'SOLUCIONES',
@@ -63,7 +63,7 @@ const Navbar = () => {
           })}
 
           <div className={styles.action}>
-            <CallToAction theme='secondary' />
+            <CallToAction />
           </div>
 
           {isOpen

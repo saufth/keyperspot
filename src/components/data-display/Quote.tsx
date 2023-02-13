@@ -25,7 +25,7 @@ const Quote = ({ phrase, author, legend }: QuoteProps) => {
           {legend}
         </div>
         <div className={styles.quoteAction}>
-          <CallToAction />
+          <CallToAction theme='secondary' />
         </div>
       </div>
     </div>

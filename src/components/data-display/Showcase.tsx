@@ -48,7 +48,7 @@ const Showcase = (
           </div>
           <div className={styles.action}>
             {action
-              ? <CallToAction />
+              ? <CallToAction theme='secondary' />
               : link ? <Link href={link}>Saber más</Link> : null}
           </div>
         </div>

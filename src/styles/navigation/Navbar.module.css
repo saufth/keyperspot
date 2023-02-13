@@ -9,8 +9,8 @@
     /* Background */
     bg-white
     /* Shadow */
-    shadow
-    shadow-zinc-900/10;
+    border-b
+    border-zinc-300;
 }
 
 .navbarScrolled {

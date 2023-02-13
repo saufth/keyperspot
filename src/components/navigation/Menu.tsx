@@ -6,9 +6,29 @@ import useDimensions from '../../modules/sizing/hooks/useDimensions'
 // Animation
 import { motion } from 'framer-motion'
 // Types
-import { MenuProps } from '../../types/navigation'
+import { LinkProps, MenuProps } from '../../types/navigation'
 // Styles
 import styles from '../../styles/navigation/Menu.module.css'
+
+/** Menu nav configuration */
+const menuOptions: LinkProps[] = [
+  {
+    children: 'Inicio',
+    href: '/'
+  },
+  {
+    children: 'Soluciones',
+    href: '/#solutions'
+  },
+  {
+    children: 'Estrategía',
+    href: '/#strategy'
+  },
+  {
+    children: 'Razón de ser',
+    href: '/reason-why'
+  }
+]
 
 /** Background animation variants */
 const backgroundVariants = {
@@ -62,38 +82,25 @@ const Menu = ({ isOpen, action }: MenuProps) => {
       animate={isOpen ? 'open' : 'closed'}
       custom={width}
     >
-      <motion.div
+      <motion.nav
         aria-label='Keyperspot directorio'
         className={styles.nav}
         variants={navVariants}
       >
-        <div>
-          Menu
-        </div>
-        <div className={styles.option} onClick={action}>
-          <NextLink href='/'>
-            Inicio
-          </NextLink>
-        </div>
-        <div className={styles.option} onClick={action}>
-          <NextLink href='/#solutions'>
-            Soluciones
-          </NextLink>
-        </div>
-        <div className={styles.option} onClick={action}>
-          <NextLink href='/#strategy'>
-            Estrategía
-          </NextLink>
-        </div>
-        <div className={styles.option} onClick={action}>
-          <NextLink href='/#problematic'>
-            Problemática
-          </NextLink>
-        </div>
+        <span className={styles.label}>Menu</span>
+
+        {menuOptions.map((option, key) => (
+          <div className={styles.option} onClick={action} key={key}>
+            <NextLink href={option.href}>
+              {option.children}
+            </NextLink>
+          </div>
+        ))}
+
         <div className={styles.action} onClick={action}>
-          <CallToAction />
+          <CallToAction theme='secondary' />
         </div>
-      </motion.div>
+      </motion.nav>
 
       <motion.div
         className={styles.background}

@@ -19,7 +19,7 @@ const Footer = () => {
           </NextLink>
         </div>
         <div className={styles.footAction}>
-          <CallToAction />
+          <CallToAction theme='secondary' />
         </div>
         <div className={styles.rights}>
           <NextLink href='/'>
