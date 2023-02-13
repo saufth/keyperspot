@@ -9,12 +9,6 @@ export interface HeaderProps {
   description: string
 }
 
-/** Hero component props */
-export interface HeroProps extends HeaderProps {
-  /** Hero image */
-  image: 'home-hero'
-}
-
 /** About component props */
 export interface AboutProps extends HeaderProps {
   /** Section id */
