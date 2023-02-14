@@ -6,26 +6,10 @@ import Menu from './Menu'
 import MenuButton from '../input/MenuButton'
 // Animation
 import { useCycle } from 'framer-motion'
-// Types
-import { LinkProps } from '../../types/navigation'
+// Config
+import { navigationConfig } from '../../modules/navigation/config'
 // Styles
 import styles from '../../styles/navigation/Navbar.module.css'
-
-/** Navbar nav configuration */
-const navOptions: LinkProps[] = [
-  {
-    children: 'SOLUCIONES',
-    href: '/#solutions'
-  },
-  {
-    children: 'ESTRATEGÍA',
-    href: '/#strategy'
-  },
-  {
-    children: 'PROBLEMÁTICA',
-    href: '/#problematic'
-  }
-]
 
 /**
  * The main navbar of application
@@ -43,7 +27,7 @@ const Navbar = () => {
     <>
       <header className={styles.navbar}>
         <div className={styles.content}>
-          <NextLink href='/' onClick={closeToggle}>
+          <NextLink href={navigationConfig[0].href} onClick={closeToggle}>
             <Image
               src='/images/logo-vertical.svg'
               alt='Keyperspot logotype'
@@ -54,13 +38,17 @@ const Navbar = () => {
             />
           </NextLink>
 
-          {navOptions.map((option, key) => {
-            return (
-              <NextLink className={styles.link} href={option.href} key={key}>
-                {option.children}
-              </NextLink>
-            )
-          })}
+          <NextLink className={styles.link} href={navigationConfig[1].href}>
+            {navigationConfig[1].children.toUpperCase()}
+          </NextLink>
+
+          <NextLink className={styles.link} href={navigationConfig[2].href}>
+            {navigationConfig[2].children.toUpperCase()}
+          </NextLink>
+
+          <NextLink className={styles.link} href={navigationConfig[3].href}>
+            {navigationConfig[3].children.toUpperCase()}
+          </NextLink>
 
           <div className={styles.action}>
             <CallToAction />

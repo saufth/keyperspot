@@ -5,30 +5,12 @@ import NextLink from 'next/link'
 import useDimensions from '../../modules/sizing/hooks/useDimensions'
 // Animation
 import { motion } from 'framer-motion'
+// Config
+import { navigationConfig } from '../../modules/navigation/config'
 // Types
-import { LinkProps, MenuProps } from '../../types/navigation'
+import { MenuProps } from '../../types/navigation'
 // Styles
 import styles from '../../styles/navigation/Menu.module.css'
-
-/** Menu nav configuration */
-const menuOptions: LinkProps[] = [
-  {
-    children: 'Inicio',
-    href: '/'
-  },
-  {
-    children: 'Soluciones',
-    href: '/#solutions'
-  },
-  {
-    children: 'Estrategía',
-    href: '/#strategy'
-  },
-  {
-    children: 'Razón de ser',
-    href: '/reason-why'
-  }
-]
 
 /** Background animation variants */
 const backgroundVariants = {
@@ -89,7 +71,7 @@ const Menu = ({ isOpen, action }: MenuProps) => {
       >
         <span className={styles.label}>Menu</span>
 
-        {menuOptions.map((option, key) => (
+        {navigationConfig.map((option, key) => (
           <div className={styles.option} onClick={action} key={key}>
             <NextLink href={option.href}>
               {option.children}

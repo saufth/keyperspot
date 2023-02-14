@@ -64,3 +64,9 @@
     text-center
     text-zinc-600;
 }
+
+.navAction {
+  @apply
+    /* Layout */
+    hidden md:block;
+}

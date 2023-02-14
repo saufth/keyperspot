@@ -2,6 +2,8 @@
 import CallToAction from '../navigation/CallToAction'
 import Image from 'next/image'
 import NextLink from 'next/link'
+// Config
+import { navigationConfig, callToActionConfig } from '../../modules/navigation/config'
 // Styles
 import styles from '../../styles/sections/Footer.module.css'
 
@@ -14,7 +16,11 @@ const Footer = () => {
     <footer className={styles.section}>
       <div className={styles.foot}>
         <div className={styles.footMail}>
-          <NextLink href='mailto:info@keyperspot.com' target='_blank' rel='noreferrer'>
+          <NextLink
+            href='mailto:info@keyperspot.com'
+            target='_blank'
+            rel='noreferrer'
+          >
             info@keyperspot.com
           </NextLink>
         </div>
@@ -34,11 +40,14 @@ const Footer = () => {
         </div>
       </div>
       <nav className={styles.nav}>
-        <NextLink href='/'>Inicio</NextLink>
-        <NextLink href='/#solutions'>Soluciones</NextLink>
-        <NextLink href='/#strategy'>Estrategía</NextLink>
-        <NextLink href='/#problematic'>Problemática</NextLink>
-        <NextLink href='/contact'>Contacto</NextLink>
+        {navigationConfig.map((option, key) => (
+          <NextLink href={option.href} key={key}>
+            {option.children}
+          </NextLink>
+        ))}
+        <NextLink className={styles.navAction} href={callToActionConfig.href}>
+          {callToActionConfig.children}
+        </NextLink>
       </nav>
     </footer>
   )

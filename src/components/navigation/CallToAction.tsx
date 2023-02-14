@@ -4,6 +4,7 @@ import NextLink from 'next/link'
 import { Themeable } from '../../types/theme'
 // Styles
 import styles from '../../styles/navigation/CallToAction.module.css'
+import { callToActionConfig } from '../../modules/navigation/config'
 
 /**
  * The primary call to actions of the application
@@ -12,14 +13,15 @@ import styles from '../../styles/navigation/CallToAction.module.css'
  * @returns The CallToAction component
  */
 const CallToAction = ({ theme = 'primary' }: Themeable) => {
+  // Styles
   const themeStyle = theme === 'secondary' ? styles.actionSecondary : ''
   const actionStyle = `${styles.action} ${themeStyle}`
 
   return (
-    <NextLink href='/contact'>
+    <NextLink href={callToActionConfig.href}>
       <div className={actionStyle}>
         <div className={styles.content}>
-          CONTÁCTANOS
+          {callToActionConfig.children.toUpperCase()}
         </div>
       </div>
     </NextLink>
