@@ -13,7 +13,9 @@ const WhyPage = () => {
           Lorem ipsum
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis asperiores illo qui eum. Nemo dicta pariatur praesentium itaque, ut maxime nisi culpa numquam officiis hic non assumenda quod ea eaque!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis asperiores
+          illo qui eum. Nemo dicta pariatur praesentium itaque, ut maxime nisi culpa numquam
+          officiis hic non assumenda quod ea eaque!
         </p>
       </header>
     </div>

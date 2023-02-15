@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
         </header>
         <div className={styles.options}>
-          <CallToAction />
+          <CallToAction theme='primary' />
           <div>
             <Link href='/#solutions'>
               SOLUCIONES
