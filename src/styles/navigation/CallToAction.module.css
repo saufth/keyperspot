@@ -3,11 +3,6 @@
     /* Sizing */
     w-60
     h-12
-    /* Typography */
-    font-neue-medium
-    md:text-lg
-    tracking-wide
-    text-white
     /* Background */
     bg-zinc-900 hover:bg-secondary
     /* Border */
@@ -33,6 +28,11 @@
     /* Flexbox & Grid */
     grid
     place-content-center
+    /* Typography */
+    font-neue-medium
+    md:text-lg
+    tracking-wide
+    text-white
     /* Border */
     rounded-full;
 }
