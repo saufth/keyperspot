@@ -4,7 +4,7 @@
     max-w-4xl
     /* Spacing */
     px-5%
-    pt-36 md:pt-48
+    py-36 md:py-48
     mx-auto
     space-y-12;
 }
