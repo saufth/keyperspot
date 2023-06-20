@@ -1,6 +1,6 @@
 # Keyperspot
 
-Keyperspot official website built in [Next.js](https://nextjs.org/) and [Typescript](https://www.typescriptlang.org/) with [TailwindCSS](https://tailwindcss.com/) for styling and [Framer Motion](https://www.framer.com/motion/) animations.
+The official Keyperspot website built in [Next.js](https://nextjs.org/) and [Typescript](https://www.typescriptlang.org/) with [TailwindCSS](https://tailwindcss.com/) for styling and [Framer Motion](https://www.framer.com/motion/) animations.
 
 ## Technologies
 
