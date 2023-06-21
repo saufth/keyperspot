@@ -35,10 +35,10 @@ const Contact = () => {
     <section className={styles.section}>
       <div className={styles.header}>
         <h1 className={styles.heading}>
-          ¿Tienes algun proyecto en mente?
+          ¿Tienes algún proyecto en mente?
         </h1>
         <p className={styles.description}>
-          Pongamonos en contacto
+          Pongámonos en contacto
         </p>
       </div>
       <form
@@ -72,7 +72,7 @@ const Contact = () => {
             name='contact_description'
             id='contact_description'
             rows={1}
-            placeholder='Cuentanos sobre tu proyecto'
+            placeholder='Cuéntanos sobre tu proyecto'
             defaultValue=''
             required
           />

@@ -12,7 +12,7 @@ export const navigationConfig: LinkProps[] = [
     href: '/#solutions'
   },
   {
-    children: 'Estrategía',
+    children: 'Estrategia',
     href: '/#strategy'
   },
   {

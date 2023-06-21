@@ -26,7 +26,7 @@ const WhyPage = () => {
           Aparentemente, una de las soluciones más obvias es la inminente totalización
           de tecnologías y digitalización de los distintos procesos de la empresa. Este
           proceso ayudará a que los procesos operativos sean automatizados y basados en
-          estadísticas y tecnologías sofisticadas. Por esta razón, el departamento de RH
+          estadísticas y tecnologías sofisticadas. Por esta razón, el departamento de RR. HH.
           debe asumir un rol relevante para liderar la agenda de modernización. Pero, por
           otro lado, las iniciativas de transformación digital generalmente fracasan porque
           no se tiene en cuenta que este es un proceso predominantemente “humano” y que su
@@ -41,27 +41,27 @@ const WhyPage = () => {
       <article className='space-y-8'>
         <header>
           <h2>
-            ¿Qué distingue a KEYPERSPOT como empresa de RRHH?
+            ¿Qué distingue a KEYPERSPOT como empresa de RR. HH.?
           </h2>
         </header>
         <div className='space-y-6'>
           <p>
-            La razón de ser de Keyperspot, a diferencia de otras empresas de RR. HH,
+            La razón de ser, a diferencia de otras empresas de RR. HH.,
             es que va directamente ligada tanto a la estrategia global de la empresa,
             como a los objetivos específicos de la misma. Es el vínculo que permite la
             continuidad entre el factor humano y los demás elementos dentro del modelo
             de negocio de una organización.
           </p>
           <p>
-            Por otro lado, en Keyperspot entendemos que las expectativas de los colaboradores
+            Por otro lado, entendemos que las expectativas de los colaboradores
             y equipos de trabajo son más altas que nunca. Ofrecerles una experiencia excepcional
-            es un gran reto, pues no es solamente escucharlos, sino entender quiénes son como
-            personas y qué es lo que realmente necesitan a niveles que solo las compañías que
+            es un gran reto, pues no se trata solamente de escucharlos, sino entender quiénes son como
+            personas y qué es lo que realmente necesitan, a niveles que solo las compañías que
             buscan inspirar a sus equipos y clientes se dan el tiempo de profundizar.
           </p>
           <p>
             Humanizar las tecnologías, conectar los valores humanos y las estadísticas
-            de resultados es a lo que nosotros denominamos “Potenciar el factor humano”.
+            de resultados es a lo que nosotros denominamos: “Potenciar el factor humano”.
           </p>
         </div>
       </article>

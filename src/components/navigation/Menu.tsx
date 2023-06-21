@@ -69,7 +69,7 @@ const Menu = ({ isOpen, action }: MenuProps) => {
         className={styles.nav}
         variants={navVariants}
       >
-        <span className={styles.label}>Menu</span>
+        <span className={styles.label}>Menú</span>
 
         {navigationConfig.map((option, key) => (
           <div className={styles.option} onClick={action} key={key}>
